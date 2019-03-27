@@ -1,0 +1,21 @@
+#main{
+	width: 75%;
+	margin-left:auto;	
+	margin-right:auto;
+}
+
+figure{
+	float: right;
+	padding-left:15px;
+	text-align:center;
+		margin:10px;
+}
+
+#imgSamurai{
+	width:195px;
+	height:auto;	
+}
+
+p{
+	padding-top: 18px;	
+}

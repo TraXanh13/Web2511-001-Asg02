@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Blossom Japan Table Reservation</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "./style/stylesheet.css">
+		<link rel = "stylesheet" type = "text/css" href = "./style/reservetable.css">
+		<meta name = "title" content = "Blossomjapanesecuisine.com">
+		<meta name = "keyword" content = "sushi, ramen, fresh, fish, rice, japanese, resturant, reservation">
+		<meta name = "description" content = "Find your table for the evening in Blossom Japan">
+	</head>
+	<body>
+		<div id = "wrapper">
+			<header>
+				<!-- Logo created using https://hatchful.shopify.com/ -->
+				<a href = "homepage.html"> <img id = "logo" src = "./images/BlossomLogoPinkBackground.png" alt = "The blossom logo"/> </a>
+				<hr/>
+				<nav>
+					<ul>
+						<li><a href = "homepage.html">Home</a></li>
+						<li><a href = "menu.html">Menu</a></li>
+						<li><a href = "about.html">About</a></li>
+						<li><a class = "selected" href = "reservetable.html">Reservations</a></li>
+					</ul>
+				</nav>
+				<hr/>
+			</header>
+			<main>
+				<article>
+					<!-- Creating the two panels to have them side by side -->
+					<div class = "container">
+						<form  action = "results.html" method = "get" target = "_blank">
+							<div id = "head">
+								<h2>Make a reservation</h2>
+							</div>
+							<div id = "left">
+								<div class = "container" id = "leftpanel">
+									<!-- The calender date to eat -->
+									<input class = "inputs" type = "date" name = "ReservedDay" required>
+									<!-- The number of guests -->
+									<input class = "inputs" type = "number" name = "guests" min = "1" max = "7" value = "1">
+									<!-- Times avaliable -->
+									<select name = "ReservedTime" size = "1" required>
+										<option disabled selected value = "">Select a time</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+										<option>18:00</option>
+										<option>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+									</select>
+									<!-- Special occasions -->
+									<select name = "Occasion" size = "1">
+										<option disabled selected value = "">Select an occasion (optional)</option>
+										<option>Date</option>
+										<option>Anniversary</option>
+										<option>Birthday</option>
+										<option>Business Meal</option>
+										<option>Reward</option>
+									</select>
+								</div>
+							</div>
+							<div id = "right">
+								<div class = "container" id = "rightpanel">
+									<!-- The guests name -->
+									<input class = "inputs" maxlength = "15" type = "text" name = "FirstName" placeholder = "First name" required>
+									<input class = "inputs" maxlength = "15" type = "text" name = "LastName" placeholder = "Last name">
+									<!-- The optional telephone number -->
+									<input class = "inputs" type = "tel" name = "PhoneNumber" 
+									pattern = "[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder = "Phone No. 123-456-7890">
+									<!-- The email -->
+									<input class = "inputs" type = "email" name = "eMail"
+									pattern = "[a-z0-9!%&-_+=/.]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder = "Email. email01@email.com" required>
+								</div>
+							</div>
+							<!-- The things on the bottom of the reservation input -->
+							<!-- Radio used to check whether anyone has allergies -->
+							<label>Does anyone have an allergy?</label>
+							<input type = "radio" name = "isAllergy" value = "yes" checked>Yes
+							<input type = "radio" name = "isAllergy" value = "no">No
+							<br/>
+							<!-- Textarea to specify allergy -->
+							<textarea rows = "3" cols = "85" name = "typeOfAllergy" placeholder = "Specifiy the type of allergy"></textarea>
+							<br/>
+							<!-- Check boxes -->
+							<label><input type = "checkbox" name = "Offers" value = "ReceiveOffers">Receive offers and deals from Blossom Japan</label>
+							<br/>
+							<label><input type = "checkbox" name = "Reminder" value = "Reminder">Receive a reminder of your reservation</label>
+							<br/>
+							<br/>
+							<input type = "submit" value = "Find Table"/>
+							<input type = "reset" value = "Clear"/>
+						</form>
+					</div>
+				</article>
+			</main>
+		</div>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href = "https://validator.w3.org/" target = "_blank">Rate</a></li>
+					<li><a href = "recomend.html">Share</a></li>
+					<li><a href = "Follow.html">Follow Us On Social Media </a></li>
+					<li><a href = "More.html">More info</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>

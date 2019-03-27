@@ -1,0 +1,71 @@
+html {
+	padding:0;
+}
+
+body {
+	font-family: Helvetica, "Times New Roman", Times;
+	overflow-x:hidden;
+	overflow: hidden;
+	margin: 0px;
+	/*Image taken from pixabay: https://pixabay.com/en/white-background-pattern-tile-2398946/ */
+	background-image: url("../images/MarbleBackground.jpg");
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #FDF2F7;
+}
+
+#logo {
+	height: 150px;
+	margin: auto;
+}
+
+li {
+	display: inline;
+	margin-right: 15px;
+}
+
+hr {
+	display: block;
+	height: 0px;
+	border: 1px solid;
+	border-color: #FE657A;
+	margin: 0px;
+}
+
+footer {
+	background: #D3D3D3;
+	width: 100%;
+	position: fixed;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+	text-align: center;
+	bottom: 0px;
+	height: 50px;
+}
+
+.selected {
+	color: #FE657A;
+}
+
+.redletter {
+	color: red;
+}
+
+.push {
+	height: 400px;
+}
+
+#wrapper {
+	min-height: 100%;
+	margin-bottom: 50px;
+}

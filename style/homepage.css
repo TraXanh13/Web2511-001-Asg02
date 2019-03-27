@@ -1,0 +1,43 @@
+main {
+	margin: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	width: 72%;
+	float: left;
+}
+
+aside {
+	border: 1px solid black;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	width: 25%;
+	background-color: white;
+	float: right;
+}
+
+table, td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.article {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid black;
+	width: 24.45%;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.articleImage {
+	overflow-x: hidden;
+	width: 200px;
+	height: 300px;
+}
+
+.easyReadSeperater {
+	background-color: #BCBCBC;
+}

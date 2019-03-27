@@ -1,0 +1,66 @@
+select {
+	padding: 2px;
+	border: 1px solid grey;
+	width: 301px;
+	height: 36px;
+}
+
+.container {
+	width: 620px;
+	height: 500px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container #left {
+	width: 290px;
+	height: 150px;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.container #leftpanel {
+	width: 290px;
+	float: left;
+	height: 40px;
+}
+
+.container #right {
+	width: 290px;
+	height: 150px;
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.container #rightpanel {
+	height: 40px;
+	width: 290px;
+	float: right;
+}
+
+.inputs {
+	padding: 2px;
+	border: 1px solid grey;
+	width: 295px;
+	height: 30px;
+}
+
+#head {
+	text-align: center;
+}	
+
