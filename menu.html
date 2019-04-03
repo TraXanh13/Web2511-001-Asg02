@@ -5,6 +5,22 @@
 	<title>Blossom Japan Menu</title>
 	<link href="./style/stylesheet.css" rel="stylesheet" type="text/css">
 	<link href="./style/menu.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <!-- minified CSS -->
+      <link rel="stylesheet"                 href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      </script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+      </script>
+      <!-- JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+      </script>
+
+	
 	<meta content="Blossomjapan/menu.com" name="title">
 	<meta content="Miso soup,Ramen, Poke Bowl, Chicken Kaarage, Dinner menu,Lunch menu, menu" name="keyword">
 	<meta content="Ramen bowls,Rice bowls, bbq chicken, platters" name="description">
@@ -32,169 +48,43 @@
 				</ul>
 			</nav>
 			<hr>
-		</header>
-		<nav>
-			<ul>
-				<li>
-					<a href="#breakfast/lunch">Breakfast/lunch Menu</a>
-				</li>
-				<li>
-					<a href="#dinner">Dinner Menu</a>
-				</li>
-			</ul>
-		</nav>
+		</header>		
+		<div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="takoyaki balls" src="./images/takoyaki.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img alt="Salmon sushi" src="./images/Sushi.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img alt="Bowl of ramen" src="./images/Ramen.jpg">
+                </div>
+				<div class="carousel-item">
+                    <img alt="bowl of rice" src="./images/Ricebowl.jpg">
+                </div>
+				<div class="carousel-item">
+                    <img alt="miso soup" src="./images/miso.jpg">
+                </div>
+				<div class="carousel-item">
+                    <img alt="Urchin rice bowl" src="./images/urchin.jpg">
+                </div>
+            </div>
+        </div>
 		<main>
-			<div id="breakfast/lunch">
 				<div id="Menu-Header">
 					<h1 class="Combo-header"><span class="redletter">S</span>hogun <span class="redletter">C</span>ombo</h1>
 					<h2 class="Choice-tag">A choice of<br>
 					Sushi, Ramen or Ricebowl</h2>
 					<h3 class="Price-Tag">19.99</h3>
 				</div>
-				<table class="tableLeft">
-					<caption>
-						<strong><span class="redletter">A</span>ppetizers</strong>
-					</caption>
-					<tbody>
-						<tr>
-							<td>Edamame</td>
-							<td>4.50</td>
-						</tr>
-						<tr>
-							<td>Chicken Kaarage</td>
-							<td>7.95</td>
-						</tr>
-						<tr>
-							<td>Chicken Katsu</td>
-							<td>7.95</td>
-						</tr>
-						<tr>
-							<td>Takoyaki (6pcs) <img alt="takoyaki balls" class="imgtakoyaki" src="./images/takoyaki.jpg"></td>
-							<td>7.95</td>
-						</tr>
-						<tr>
-							<td>Spring Roll (4pcs)</td>
-							<td>6.00</td>
-						</tr>
-						<tr>
-							<td>Yakitori</td>
-							<td>8.45</td>
-						</tr>
-						<tr>
-							<td>Shumai</td>
-							<td>8.45</td>
-						</tr>
-						<tr>
-							<td>Umi</td>
-							<td>9.50</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<caption>
-						<strong><span class="redletter">S</span>ushi</strong>
-					</caption>
-					<tbody>
-						<tr>
-							<td>Nigiri (2pcs) <img alt="Salmon sushi" class="imgSushi" src="./images/Sushi.jpg"></td>
-							<td>4.50</td>
-						</tr>
-						<tr>
-							<td>Inari (2pcs)</td>
-							<td>4.50</td>
-						</tr>
-						<tr>
-							<td>Temari (5pcs)</td>
-							<td>8.25</td>
-						</tr>
-						<tr>
-							<td>kakinoha sushi (8pcs)</td>
-							<td>10.25</td>
-						</tr>
-						<tr>
-							<td>Uni (2pcs)</td>
-							<td>5.50</td>
-						</tr>
-						<tr>
-							<td>Unagi (2pcs)</td>
-							<td>4.50</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<caption>
-						<strong><span class="redletter">R</span>amen</strong>
-					</caption>
-					<tbody>
-						<tr>
-							<td>Okinawa Soba</td>
-							<td>9.50</td>
-						</tr>
-						<tr>
-							<td>Nagasaki Champon</td>
-							<td>9.75</td>
-						</tr>
-						<tr>
-							<td>Miso Butter Ramen <img alt="Bowl of ramen" class="imgRamen" src="./images/Ramen.jpg"></td>
-							<td>9.95</td>
-						</tr>
-						<tr>
-							<td>Shiyo Ramen</td>
-							<td>9.95</td>
-						</tr>
-						<tr>
-							<td>Shoyo Ramen</td>
-							<td>9.95</td>
-						</tr>
-						<tr>
-							<td>Pork Tonkatsu Ramen</td>
-							<td>10.25</td>
-						</tr>
-						<tr>
-							<td>Chicken Tonkatsu Ramen</td>
-							<td>10.25</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="tableRight">
-					<caption>
-						<strong><span class="redletter">R</span>ice bowl</strong>
-					</caption>
-					<tbody>
-						<tr>
-							<td>Poke Bowl <img alt="bowl of rice" class="imgRice" src="./images/Ricebowl.jpg"></td>
-							<td>9.75</td>
-						</tr>
-						<tr>
-							<td>Chicken Kaarage Bowl</td>
-							<td>9.75</td>
-						</tr>
-						<tr>
-							<td>Chicken Tonkatsu Bowl</td>
-							<td>10.25</td>
-						</tr>
-						<tr>
-							<td>Pork Tonkatsu Bowl</td>
-							<td>10.25</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<p class = "push"> </p>
-			<div>
-				<h1 class="Combo-header" id = "dinner"><span class="redletter">S</span>hogun <span class="redletter">D</span>inner <span class=
-				"redletter">C</span>ombo</h1>
-				<h2 class="Choice-tag">A choice of Appetizer and<br>
-				Sushi, Ramen or Ricebowl</h2>
-				<h3 class="Price-Tag">19.99</h3>
-			</div>
 			<table class="tableLeft">
 				<caption>
 					<strong><span class="redletter">A</span>ppetizers</strong>
 				</caption>
 				<tbody>
 					<tr>
-						<td>Miso Soup <img alt="miso soup" id="imgmiso" src="./images/miso.jpg"></td>
+						<td>Miso Soup</td>
 						<td>4.50</td>
 					</tr>
 					<tr>
@@ -206,7 +96,7 @@
 						<td>7.95</td>
 					</tr>
 					<tr>
-						<td>Takoyaki (6pcs) <img alt="takoyaki balls" class="imgtakoyaki" src="./images/takoyaki.jpg"></td>
+						<td>Takoyaki (6pcs)</td>
 						<td>7.95</td>
 					</tr>
 					<tr>
@@ -233,7 +123,7 @@
 				</caption>
 				<tbody>
 					<tr>
-						<td>Nigiri (2pcs) <img alt="Salmon sushi" class="imgSushi" src="./images/Sushi.jpg"></td>
+						<td>Nigiri (2pcs)</td>
 						<td>4.50</td>
 					</tr>
 					<tr>
@@ -257,7 +147,7 @@
 						<td>4.50</td>
 					</tr>
 					<tr>
-						<td>Wagyu Beef(2pcs) <img alt="images of beef" id="imgbeef" src="./images/beef.jpg"></td>
+						<td>Wagyu Beef(2pcs)</td>
 						<td>10.50</td>
 					</tr>
 				</tbody>
@@ -276,7 +166,7 @@
 						<td>9.75</td>
 					</tr>
 					<tr>
-						<td>Miso Butter Ramen <img alt="Bowl of ramen" class="imgRamen" src="./images/Ramen.jpg"></td>
+						<td>Miso Butter Ramen</td>
 						<td>9.95</td>
 					</tr>
 					<tr>
@@ -303,7 +193,7 @@
 				</caption>
 				<tbody>
 					<tr>
-						<td>Poke Bowl <img alt="Rice bowl" class="imgRice" src="./images/Ricebowl.jpg"></td>
+						<td>Poke Bowl</td>
 						<td>9.75</td>
 					</tr>
 					<tr>
@@ -319,7 +209,7 @@
 						<td>10.25</td>
 					</tr>
 					<tr>
-						<td>Umi Bowl <img alt="Urchin rice bowl" id="imgumi" src="./images/urchin.jpg"></td>
+						<td>Umi Bowl</td>
 						<td>15.00</td>
 					</tr>
 				</tbody>

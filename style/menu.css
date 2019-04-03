@@ -43,40 +43,16 @@ nav {
 	margin-bottom:1px;	
 }
 
-.imgtakoyaki{
-		width:120px; 
-		height: auto;
-	
-}
-
-.imgSushi{
-	width: 100px;
-	height:auto;
-}
-.imgRice{
-	width:100px;
-	height:auto;
-}
-.imgRamen{
-	width:120px;
-	height:auto;
-	
-}
 #dinner{
 margin-top: 300px;		
 }
-#imgmiso{
-	width: 100px;
-	height:auto;
-}
-#imgumi{
-	width: 100px;
-	height:auto;
-}
-#imgbeef{
-	width: 100px;
-	height:auto;
-}
+
+.carousel img{
+            width:100%;
+            height:60vh;         /*vh = viewport height*/
+            object-fit: cover;
+        }
+
 
 /* 
 Sources for the images
