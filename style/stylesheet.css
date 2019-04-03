@@ -69,3 +69,11 @@ footer {
 	min-height: 100%;
 	margin-bottom: 50px;
 }
+
+p::first-letter {
+	color: #800000;
+}
+
+h3::first-letter {
+	color: #800000;
+}
