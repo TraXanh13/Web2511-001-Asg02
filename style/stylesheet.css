@@ -5,7 +5,6 @@ html {
 body {
 	font-family: Helvetica, "Times New Roman", Times;
 	overflow-x:hidden;
-	overflow: hidden;
 	margin: 0px;
 	/*Image taken from pixabay: https://pixabay.com/en/white-background-pattern-tile-2398946/ */
 	background-image: url("../images/MarbleBackground.jpg");
