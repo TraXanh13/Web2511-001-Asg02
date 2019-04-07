@@ -30,7 +30,7 @@ p{
 
 @media screen and (min-width:1200px) {
 		#imgSamurai {
-			transform:rotate(40deg);
+			transform:scale(1.5);
 		}
 }
 
