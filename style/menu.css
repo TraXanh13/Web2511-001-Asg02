@@ -1,11 +1,14 @@
-table{
-	float: left;
-	display:inline-block;             
-	margin-left: 1.3%;
+table {
+	float: left;            
+	margin: 5% 0 0 1%;
+}
+thead, tbody{
+	width: 50%;
 }
 
-table, td {
+table, td, th {
 	border: 1px solid black;
+	text-align: center;
 }
 
 .Combo-header{
@@ -32,21 +35,83 @@ table, td {
 }
 
 .carousel img{
-            width:100%;
-            height:60vh;         /*vh = viewport height*/
-            object-fit: cover;
+    width:100%;
+    height:60vh;         /*vh = viewport height*/
+    object-fit: cover;
+}
+
+h1::first-letter, #redC{
+	color: #800000;
+}
+
+#Menu-Special {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#blossomSam {
+	position: fixed;
+	z-index: 1;
+}
+
+#samurai {
+	position: fixed;
+	top: 10px;
+	left: 0;
+}
+
+@media screen and (min-width:0px){
+	table {
+		margin-left: 5%; 
+		width: 90%;
+	}
+
+	#blossomSam {
+		top: 55px;
+		left: 52px;
+	}
+
+	.push { 
+		height: 1200px;
+	}
 }
 
 
-/* 
-Sources for the images
+@media screen and (min-width:900px){
+	table {
+		margin-left: 1%;
+		width: 47%;
+	}
 
-		https://pixabay.com/photos/miso-soup-bureau-miso-tang-749368/
-		https://www.pexels.com/search/ramen/
-		https://pixabay.com/en/tuna-poke-poke-bowl-salad-3963936/
-		https://pixabay.com/en/salmon-sushi-dining-room-restaurant-1353598/
-		https://pixabay.com/en/food-takoyaki-ball-1614130/ 
-		https://pixabay.com/photos/salmon-roe-urchin-rice-bowl-19542/
-		https://pixabay.com/photos/sushi-beef-japanese-3415679/
+	#newRow{
+		clear: left;
+	}
 
-*/
+	#blossomSam {
+		top: 70px;
+		left: 63px;
+	}
+
+	.push { 
+		height: 650px;
+	}
+}
+
+@media screen and (min-width:1200px){
+	table{
+		width: 23.75%;
+	}
+
+	#newRow {
+		clear: none;
+	}
+
+	#blossomSam {
+		top: 85px;
+		left: 70px;
+	}
+	.push { 
+		height: 450px;
+	}
+}

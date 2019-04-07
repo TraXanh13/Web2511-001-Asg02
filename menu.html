@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+Sources for the images
+
+		https://pixabay.com/photos/miso-soup-bureau-miso-tang-749368/
+		https://www.pexels.com/search/ramen/
+		https://pixabay.com/en/tuna-poke-poke-bowl-salad-3963936/
+		https://pixabay.com/en/salmon-sushi-dining-room-restaurant-1353598/
+		https://pixabay.com/en/food-takoyaki-ball-1614130/ 
+		https://pixabay.com/photos/salmon-roe-urchin-rice-bowl-19542/
+		https://pixabay.com/photos/sushi-beef-japanese-3415679/
+-->
 <head>
 	<meta charset="utf-8">
 	<title>Blossom Japan Menu</title>
@@ -21,7 +32,7 @@
       </script>
 
 	
-	<meta content="Blossomjapan/menu.com" name="title">
+	<meta content="Blossomjapan/menu.com" name="thead">
 	<meta content="Miso soup,Ramen, Poke Bowl, Chicken Kaarage, Dinner menu,Lunch menu, menu" name="keyword">
 	<meta content="Ramen bowls,Rice bowls, bbq chicken, platters" name="description">
 </head>
@@ -64,16 +75,31 @@
             </div>
         </div>
 		<main>
-				<div id="Menu-Header">
-					<h1 class="Combo-header"><span class="redletter">S</span>hogun <span class="redletter">C</span>ombo</h1>
-					<h2 class="Choice-tag">A choice of<br>
-					Sushi, Ramen or Ricebowl</h2>
-					<h3 class="Price-Tag">19.99</h3>
-				</div>
-			<table class="tableLeft">
-				<caption>
-					<strong><span class="redletter">A</span>ppetizers</strong>
-				</caption>
+			<a href = #wrapper>
+				<picture id = "blossomSam">
+					<source srcset = "./images/BlossomSamuraiLarge.png" alt = "Blossom on samurai silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
+					<source srcset = "./images/BlossomSamuraiMed.png" alt = "Blossom on samurai silhouette" media = "(min-width:900px)"/>
+					<img  srcset = "./images/BlossomSamuraiSmall.png" alt = "Blossom on samurai silhouette"/> 
+				</picture>
+				<picture id = "samurai">
+					<source srcset = "./images/samuraiMenuLarge.png" alt = "samurai on horse silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
+					<source srcset = "./images/samuraiMenuMed.png" alt = "samurai on horse silhouette" media = "(min-width:900px)"/>
+					<img srcset = "./images/samuraiMenuSmall.png" alt = "samurai on horse silhouette"/> 
+				</picture>
+			</a>
+			<div id="Menu-Special">
+				<h1 class="Combo-header">Shogun <span id = "redC">C</span>ombo</h1>
+				<h2 class="Choice-tag">A choice of<br>
+				Sushi, Ramen or Ricebowl</h2>
+				<h4 class="Price-Tag">19.99</h3>
+			</div>
+			<div id = "image">
+				
+			</div>
+			<table>
+				<thead>
+					<th colspan = "2"><Strong>Appetizers</caption></th>
+				</thead>
 				<tbody>
 					<tr>
 						<td>Miso Soup</td>
@@ -110,9 +136,9 @@
 				</tbody>
 			</table>
 			<table>
-				<caption>
-					<strong><span class="redletter">S</span>ushi</strong>
-				</caption>
+				<thead>
+					<th colspan = "2"><strong>Sushi</strong></th>
+				</thead>
 				<tbody>
 					<tr>
 						<td>Nigiri (2pcs)</td>
@@ -144,10 +170,10 @@
 					</tr>
 				</tbody>
 			</table>
-			<table>
-				<caption>
-					<strong><span class="redletter">R</span>amen</strong>
-				</caption>
+			<table id = "newRow">
+				<thead>
+					<th colspan = "2"><strong>Ramen</strong></th>
+				</thead>
 				<tbody>
 					<tr>
 						<td>Okinawa Soba</td>
@@ -179,10 +205,10 @@
 					</tr>
 				</tbody>
 			</table>
-			<table class="tableRight">
-				<caption>
-					<strong><span class="redletter">R</span>ice bowl</strong>
-				</caption>
+			<table>
+				<thead>
+					<th colspan = "2"><strong>Rice bowl</strong></th>
+				</thead>
 				<tbody>
 					<tr>
 						<td>Poke Bowl</td>
@@ -208,7 +234,7 @@
 			</table>
 		</main>
 	</div>
-	<p class = "push"> </p>
+	<p class = "push"></p>
 	<footer>
 		<nav>
 			<ul>
