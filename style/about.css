@@ -13,9 +13,29 @@ figure{
 
 #imgSamurai{
 	width:195px;
-	height:auto;	
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 p{
 	padding-top: 18px;	
+}
+
+@media screen and (min-width:900px) {
+		#imgSamurai {
+			transform:rotate(20deg);
+		}
+}
+
+@media screen and (min-width:1200px) {
+		#imgSamurai {
+			transform:rotate(40deg);
+		}
+}
+
+@media screen and (min-width:1600px) {
+		#imgSamurai {
+			transform:rotate(60deg);
+		}
 }

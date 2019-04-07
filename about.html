@@ -5,6 +5,7 @@
 		<title>About Blossom Japan</title>
 		<link rel = "stylesheet" type = "text/css" href = "./style/about.css">
 		<link rel = "stylesheet" type = "text/css" href = "./style/stylesheet.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="style/about.css">
 		<meta name = "title" content ="Blossomjapan/about.com">
 		<meta name ="keyword" content =" Japanese food,Sushi,Ramem,chicken,pork,beef,Wagyu beef,
 				Kobe beef">
@@ -28,10 +29,12 @@
 				<hr/>
 			</header>
 			<div id="main">				
-				<figure>
-					<img id ="imgSamurai" src = "./images/samurai.jpg" alt="samurai-katana.jpg"> 
-					<figcaption>"Measure twice, cut once"</figcaption>
-				</figure>
+				<picture>
+					<source srcset="images/samurai.jpg" media="(min-width:1600px)" alt="samurai tilted"/>
+					<source srcset="images/samurai.jpg" media="(min-width:1200px)" alt="samurai enhanced"/>
+					<source srcset="images/samurai.jpg" media="(min-width:900px)" alt="samurai">
+					<img srcset="images/samurai.jpg" id="imgSamurai" alt="samurai-katana.jpg"/> 
+				</picture>
 
 				<p>
 				Founded in 1969, in the heart of Calgary, Alberta, Blossom has been serving locals, and tourisit alike for 50 years.
