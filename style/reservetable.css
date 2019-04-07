@@ -14,7 +14,7 @@ select {
 }
 
 .container #left {
-	width: 290px;
+	width: 270px;
 	height: 150px;
 	float: left;
 	padding-left: 5px;
@@ -28,20 +28,20 @@ select {
 }
 
 .container #leftpanel {
-	width: 290px;
+	width: 270px;
 	float: left;
 	height: 40px;
 }
 
 .container #right {
-	width: 290px;
+	width: 270px;
 	height: 150px;
 	float: right;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	margin-top: 5px;
+	margin-top: 23px;
 	margin-right: 5px;
 	margin-left: 5px;
 	margin-bottom: 5px;

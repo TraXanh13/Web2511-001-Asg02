@@ -40,14 +40,14 @@ Sources for the images
 	<div id="wrapper">
 		<header>
 				<!-- Logo created using https://hatchful.shopify.com/ -->
-				<a href = "homepage.html"> <img id = "logo" src = "./images/BlossomLogo.png" alt = "The blossom logo"/> </a>
+				<a href = "homepage.html" tabindex = "-1"> <img id = "logo" src = "./images/BlossomLogo.png" alt = "The blossom logo"/> </a>
 				<hr/>
 				<nav>
 					<ul>
-						<li><a href = "homepage.html">Home</a></li>
-						<li><a class = "selected" href = "menu.html">Menu</a></li>
-						<li><a href = "about.html">About</a></li>
-						<li><a href = "reservetable.html">Reservations</a></li>
+						<li><a href = "homepage.html" tabindex = "-1">Home</a></li>
+						<li><a class = "selected" href = "menu.html" tabindex = "-1">Menu</a></li>
+						<li><a href = "about.html" tabindex = "-1">About</a></li>
+						<li><a href = "reservetable.html" tabindex = "-1">Reservations</a></li>
 					</ul>
 				</nav>
 				<hr/>
@@ -55,81 +55,83 @@ Sources for the images
 		<div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img alt="takoyaki balls" src="./images/takoyaki.jpg">
+                    <img alt="takoyaki balls" title="takoyaki balls" src="./images/takoyaki.jpg">
                 </div>
                 <div class="carousel-item">
-                    <img alt="Salmon sushi" src="./images/Sushi.jpg">
+                    <img alt="Salmon sushi" title="Salmon sushi" src="./images/Sushi.jpg">
                 </div>
                 <div class="carousel-item">
-                    <img alt="Bowl of ramen" src="./images/Ramen.jpg">
+                    <img alt="Bowl of ramen" title="Bowl of ramen" src="./images/Ramen.jpg">
                 </div>
 				<div class="carousel-item">
-                    <img alt="bowl of rice" src="./images/Ricebowl.jpg">
+                    <img alt="bowl of rice" title="bowl of rice" src="./images/Ricebowl.jpg">
                 </div>
 				<div class="carousel-item">
-                    <img alt="miso soup" src="./images/miso.jpg">
+                    <img alt="miso soup" title = "miso soup" src="./images/miso.jpg">
                 </div>
 				<div class="carousel-item">
-                    <img alt="Urchin rice bowl" src="./images/urchin.jpg">
+                    <img alt="Urchin rice bowl" title="Urchin rice bowl" src="./images/urchin.jpg">
                 </div>
             </div>
         </div>
 		<main>
 			<a href = #wrapper>
 				<picture id = "blossomSam">
-					<source srcset = "./images/BlossomSamuraiLarge.png" alt = "Blossom on samurai silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
-					<source srcset = "./images/BlossomSamuraiMed.png" alt = "Blossom on samurai silhouette" media = "(min-width:900px)"/>
-					<img  srcset = "./images/BlossomSamuraiSmall.png" alt = "Blossom on samurai silhouette"/> 
+					<source srcset = "./images/BlossomSamuraiLarge.png" title = "Blossom on samurai silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
+					<source srcset = "./images/BlossomSamuraiMed.png" title = "Blossom on samurai silhouette" media = "(min-width:900px)"/>
+					<img  src = "./images/BlossomSamuraiSmall.png" title = "Blossom on samurai silhouette"/> 
 				</picture>
 				<picture id = "samurai">
-					<source srcset = "./images/samuraiMenuLarge.png" alt = "samurai on horse silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
-					<source srcset = "./images/samuraiMenuMed.png" alt = "samurai on horse silhouette" media = "(min-width:900px)"/>
-					<img srcset = "./images/samuraiMenuSmall.png" alt = "samurai on horse silhouette"/> 
+					<source srcset = "./images/samuraiMenuLarge.png" title = "samurai on horse silhouette" media = "(min-width:1200px)"/> <!-- Image: https://pixabay.com/vectors/samurai-warrior-japanese-horse-3654243/ -->
+					<source srcset = "./images/samuraiMenuMed.png" title = "samurai on horse silhouette" media = "(min-width:900px)"/>
+					<img src = "./images/samuraiMenuSmall.png" title = "samurai on horse silhouette"/> 
 				</picture>
 			</a>
-			<div id="Menu-Special">
+			<div id="Menu-Special" tabindex = "1">
 				<h1 class="Combo-header">Shogun <span id = "redC">C</span>ombo</h1>
 				<h2 class="Choice-tag">A choice of<br>
 				Sushi, Ramen or Ricebowl</h2>
-				<h4 class="Price-Tag">19.99</h3>
+				<h4 class="Price-Tag">19.99</h4>
 			</div>
 			<div id = "image">
 				
 			</div>
 			<table>
 				<thead>
-					<th colspan = "2"><Strong>Appetizers</caption></th>
+					<tr>
+						<th colspan = "2" tabindex = "2"><Strong>Appetizers</strong></th>
+					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr tabindex = "3">
 						<td>Miso Soup</td>
 						<td>4.50</td>
 					</tr>
-					<tr>
+					<tr tabindex = "4">
 						<td>Chicken Kaarage</td>
 						<td>7.95</td>
 					</tr>
-					<tr>
+					<tr tabindex = "5">
 						<td>Chicken Katsu</td>
 						<td>7.95</td>
 					</tr>
-					<tr>
+					<tr tabindex = "6">
 						<td>Takoyaki (6pcs)</td>
 						<td>7.95</td>
 					</tr>
-					<tr>
+					<tr tabindex = "7">
 						<td>Spring Roll (4pcs)</td>
 						<td>6.00</td>
 					</tr>
-					<tr>
+					<tr tabindex = "8">
 						<td>Yakitori</td>
 						<td>8.45</td>
 					</tr>
-					<tr>
+					<tr tabindex = "9">
 						<td>Shumai</td>
 						<td>8.45</td>
 					</tr>
-					<tr>
+					<tr tabindex = "10">
 						<td>Umi</td>
 						<td>9.50</td>
 					</tr>
@@ -137,34 +139,36 @@ Sources for the images
 			</table>
 			<table>
 				<thead>
-					<th colspan = "2"><strong>Sushi</strong></th>
+					<tr>
+						<th colspan = "2" tabindex = "11"><strong>Sushi</strong></th>
+					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr	tabindex = "12">
 						<td>Nigiri (2pcs)</td>
 						<td>4.50</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "13">
 						<td>Inari (2pcs)</td>
 						<td>4.50</td>
 					</tr>
-					<tr>
+					<tr tabindex = "14">
 						<td>Temari (5pcs)</td>
 						<td>8.25</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "15">
 						<td>kakinoha sushi (8pcs)</td>
 						<td>10.25</td>
 					</tr>
-					<tr>
+					<tr tabindex = "16">
 						<td>Uni (2pcs)</td>
 						<td>5.50</td>
 					</tr>
-					<tr>
+					<tr tabindex = "17">
 						<td>Unagi (2pcs)</td>
 						<td>4.50</td>
 					</tr>
-					<tr>
+					<tr tabindex = "18">
 						<td>Wagyu Beef(2pcs)</td>
 						<td>10.50</td>
 					</tr>
@@ -172,34 +176,36 @@ Sources for the images
 			</table>
 			<table id = "newRow">
 				<thead>
-					<th colspan = "2"><strong>Ramen</strong></th>
+					<tr>
+						<th colspan = "2" tabindex = "19"><Strong>Ramen</strong></th>
+					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr	tabindex = "20">
 						<td>Okinawa Soba</td>
 						<td>9.50</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "21">
 						<td>Nagasaki Champon</td>
 						<td>9.75</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "22">
 						<td>Miso Butter Ramen</td>
 						<td>9.95</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "23">
 						<td>Shiyo Ramen</td>
 						<td>9.95</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "24">
 						<td>Shoyo Ramen</td>
 						<td>9.95</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "25">
 						<td>Pork Tonkatsu Ramen</td>
 						<td>10.25</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "26">
 						<td>Chicken Tonkatsu Ramen</td>
 						<td>10.25</td>
 					</tr>
@@ -207,26 +213,28 @@ Sources for the images
 			</table>
 			<table>
 				<thead>
-					<th colspan = "2"><strong>Rice bowl</strong></th>
+					<tr>
+						<th colspan = "27" tabindex = "2"><Strong>Rice Bowl</strong></th>
+					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr	tabindex = "28">
 						<td>Poke Bowl</td>
 						<td>9.75</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "29">
 						<td>Chicken Kaarage Bowl</td>
 						<td>9.75</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "30">
 						<td>Chicken Tonkatsu Bowl</td>
 						<td>10.25</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "31">
 						<td>Pork Tonkatsu Bowl</td>
 						<td>10.25</td>
 					</tr>
-					<tr>
+					<tr	tabindex = "32">
 						<td>Umi Bowl</td>
 						<td>15.00</td>
 					</tr>
